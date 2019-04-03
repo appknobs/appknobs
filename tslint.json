@@ -1,0 +1,72 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "typestrict",
+    "tslint-sonarts"
+  ],
+  "rules": {
+    "no-unused-variable": false,
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "arrow-parens": [
+      true,
+      "always"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "curly": [
+      true
+    ],
+    "switch-default": true,
+    "triple-equals": true,
+    "no-console": [
+      true
+    ],
+    "no-consecutive-blank-lines": true,
+    "object-literal-shorthand": true,
+    "one-variable-per-declaration": [
+      true,
+      "ignore-for-loop"
+    ],
+    "prefer-const": true,
+    "prefer-template": true,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "object-literal-sort-keys": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "radix": true,
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "no-inferred-empty-object-type": true
+  }
+}

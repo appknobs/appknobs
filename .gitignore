@@ -1,0 +1,12 @@
+*.swp
+*.un~
+.DS_Store
+.eslintcache
+/.vscode
+coverage
+node_modules
+npm-debug.log
+yarn-error.log
+lib
+*debug.log
+.cache

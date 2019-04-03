@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "lib": ["esnext", "dom"],
+    "target": "es2015",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "skipLibCheck": true,
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

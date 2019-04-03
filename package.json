@@ -1,0 +1,39 @@
+{
+  "name": "@appknobs/appknobs",
+  "private": true,
+  "version": "0.0.0",
+  "license": "UNLICENCED",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "validate": "yarn lint && yarn test",
+    "tsclint": "tsc --noEmit --noUnusedParameters --noUnusedLocals",
+    "tslint": "tslint --project ./tsconfig.json --format stylish",
+    "lint": "yarn tsclint && yarn tslint",
+    "test": "lerna run test",
+    "build-libs": "lerna run build-lib",
+    "watch-libs": "lerna run watch-lib --parallel"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@types/node": "^8.0.57",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.2.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.5.0",
+    "lerna": "^3.4.3",
+    "prettier": "^1.14.3",
+    "prettier-tslint": "^0.4.0",
+    "ts-jest": "^23.0.0",
+    "ts-loader": "^5.1.0",
+    "tslint": "^5.10.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "tslint-sonarts": "^1.8.0",
+    "typescript": "^3.0.1",
+    "typestrict": "^1.0.1"
+  },
+  "dependencies": {}
+}

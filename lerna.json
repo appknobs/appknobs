@@ -1,0 +1,16 @@
+{
+  "version": "0.4.6",
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "allowBranch": "master"
+    },
+    "run": {
+      "npmClient": "yarn"
+    }
+  }
+}
