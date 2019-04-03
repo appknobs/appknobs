@@ -1,0 +1,48 @@
+{
+  "name": "@appknobs/react",
+  "description": "Declarative feature flags in React using Appknobs.io",
+  "version": "0.4.4",
+  "license": "Apache-2.0",
+  "homepage": "http://appknobs.io",
+  "keywords": [
+    "Appknobs.io",
+    "client",
+    "react",
+    "feature-flags",
+    "feature-toggles",
+    "feature-switch"
+  ],
+  "main": "lib/index",
+  "types": "lib/index",
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "test": "jest src/",
+    "tdd": "jest src/ --watch",
+    "build": "rm -rf lib && tsc",
+    "build-lib": "yarn build",
+    "watch": "tsc --watch",
+    "watch-lib": "yarn watch",
+    "prepack": "yarn build"
+  },
+  "dependencies": {
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.15",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.8",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "react-test-renderer": "^16.7.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
