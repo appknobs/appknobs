@@ -1,7 +1,7 @@
 {
   "name": "@appknobs/client",
   "description": "Appknobs.io client for multiple environments",
-  "version": "0.4.5",
+  "version": "0.4.7",
   "license": "Apache-2.0",
   "homepage": "http://appknobs.io",
   "keywords": [
