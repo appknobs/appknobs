@@ -22,9 +22,7 @@ const parseJsonResponse = ({data, error}: EndpointResponseObject) => {
   return data
 }
 
-export const newEvaluateApiCall = (injectedFetch?): EvaluateApiCall => {
-  const fetch = injectedFetch ? injectedFetch : (global as any).fetch
-
+export const newEvaluateApiCall = (fetch): EvaluateApiCall => {
   return ({apikey, projectId, payload}) => {
     const hash = objectHash(payload)
     const url = getUrl(projectId, hash)
