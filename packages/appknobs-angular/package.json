@@ -1,0 +1,83 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/index.ts"
+    }
+  },
+  "name": "@appknobs/angular",
+  "description": "Declarative feature flags in Angular using Appknobs.io",
+  "version": "0.4.7",
+  "license": "Apache-2.0",
+  "homepage": "http://appknobs.io",
+  "keywords": [
+    "Appknobs.io",
+    "client",
+    "angular",
+    "feature-flags",
+    "feature-toggles",
+    "feature-switch"
+  ],
+  "main": "dist/bundles/appknobs-angular.umd.js",
+  "types": "dist/index",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && ng-packagr -p package.json && rm dist/package.json && rm dist/README.md",
+    "build-lib": "yarn build",
+    "watch": "ng-packagr -p package.json -w",
+    "watch-lib": "yarn watch",
+    "prepack": "yarn build"
+  },
+  "peerDependencies": {
+    "@appknobs/client": "^0.4.7"
+  },
+  "devDependencies": {
+    "@angular/animations": "~7.2.0",
+    "@angular/common": "~7.2.0",
+    "@angular/compiler": "~7.2.0",
+    "@angular/core": "~7.2.0",
+    "@angular/forms": "~7.2.0",
+    "@angular/platform-browser": "~7.2.0",
+    "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/router": "~7.2.0",
+    "core-js": "^2.5.4",
+    "rxjs": "~6.3.3",
+    "zone.js": "~0.8.26",
+    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular-devkit/build-ng-packagr": "~0.13.0",
+    "@angular/cli": "~7.3.7",
+    "@angular/compiler-cli": "~7.2.0",
+    "@angular/language-service": "~7.2.0",
+    "@types/node": "~8.9.4",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "~4.5.0",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.0.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^4.2.0",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tsickle": ">=0.34.0",
+    "tslib": "^1.9.0",
+    "tslint": "~5.11.0",
+    "typescript": "~3.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "module": "dist/fesm5/appknobs-angular.js",
+  "es2015": "dist/fesm2015/appknobs-angular.js",
+  "esm5": "dist/esm5/appknobs-angular.js",
+  "esm2015": "dist/esm2015/appknobs-angular.js",
+  "fesm5": "dist/fesm5/appknobs-angular.js",
+  "fesm2015": "dist/fesm2015/appknobs-angular.js",
+  "typings": "dist/appknobs-angular.d.ts",
+  "metadata": "dist/appknobs-angular.metadata.json",
+  "sideEffects": false
+}
