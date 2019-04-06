@@ -110,5 +110,5 @@ Once configured, you can call `AppknobsService.evaluate(payload)` any time and a
 ---
 
 For more information visit [appknobs.io](https://appknobs.io/) or read in-depth tutorials in [our blog](https://appknobs.io/blog).
-You can get reach us at hello@appknobs.io or on [@appknobs](https://twitter.com/Appknobs). We'd appreciate your feedback!
+You can reach us at hello@appknobs.io or on [@appknobs](https://twitter.com/Appknobs). We'd appreciate your feedback!
 
