@@ -6,7 +6,7 @@
   },
   "name": "@appknobs/angular",
   "description": "Declarative feature flags in Angular using Appknobs.io",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "license": "Apache-2.0",
   "homepage": "http://appknobs.io",
   "repository": "https://github.com/appknobs/appknobs",
