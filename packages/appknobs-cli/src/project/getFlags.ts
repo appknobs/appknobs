@@ -1,7 +1,26 @@
-import {findAllFlags, listFilePaths} from '@appknobs/react-parser'
+import {
+  findAllFlags,
+  guessFramework,
+  listFilePaths,
+  ProjectType,
+} from '@appknobs/code-parser'
 
-export const getFlags = async (match: string[], path: string) => {
-  const paths = await listFilePaths(match, path)
+type ForcedProjectType = 'react' | 'angular'
 
-  return await findAllFlags(paths)
+const projTypeMap = {
+  angular: ProjectType.ANGULAR,
+  react: ProjectType.REACT,
+}
+
+export const getFlags = async (
+  path: string,
+  forcedProjType?: ForcedProjectType,
+) => {
+  const paths = await listFilePaths(path)
+
+  const projtype = forcedProjType
+    ? projTypeMap[forcedProjType]
+    : guessFramework(paths)
+
+  return await findAllFlags(paths, projtype)
 }

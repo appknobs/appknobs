@@ -9,7 +9,6 @@ import {ensureUserIsLoggedIn} from './user/ensureUserIsLoggedIn'
 
 const debug = makeDebug('appknobs:uploadKnobs')
 const consoleLog = console.log // tslint:disable-line
-const hardcodedMatch = ['*.js', '*.jsx', '*.ts', '*.tsx']
 const saveKnobSpinner = ora('Saving knobs...')
 
 export const uploadKnobsAction = (
@@ -17,7 +16,9 @@ export const uploadKnobsAction = (
   cognito,
   loginAction,
   registerAction,
-) => async (pathToConsider) => {
+) => async (pathToConsider, program) => {
+  const projectType = program.type === true ? undefined : program.type
+
   await ensureUserIsLoggedIn({
     cognito,
     loginAction,
@@ -36,10 +37,10 @@ export const uploadKnobsAction = (
 
     consoleLog(`App name: ${project.name}`)
     consoleLog(`App ID: ${project.id}`)
+    consoleLog(`Framework: ${projectType || 'auto-guessing'}`)
 
     debug('Looking up feature flags under path %s', pathToConsider)
-    debug('Looking up feature flags in files matching %s', hardcodedMatch)
-    const flags = await getFlags(hardcodedMatch, pathToConsider)
+    const flags = await getFlags(pathToConsider, projectType)
     debug('flags %o', flags)
 
     if (!flags.length) {

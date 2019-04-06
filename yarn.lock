@@ -207,6 +207,18 @@
   dependencies:
     tslib "^1.9.0"
 
+"@appknobs/code-parser@^0.4.8":
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/@appknobs/code-parser/-/code-parser-0.4.8.tgz#3209e5d666a15a8267dba3875c41f398dbf7f7fe"
+  integrity sha512-8hzbBo2AP2BQ0xdkWAKLh5P1fYyxd52907tSKfmL0GoU8biYjPOsPTIH+Z+mvh7VVzd3TVkgVhzHl2KHDn0FPg==
+  dependencies:
+    "@babel/parser" "^7.2.0"
+    "@babel/traverse" "^7.1.6"
+    htmlparser2 "^3.10.1"
+    klaw "^3.0.0"
+    lodash "^4.17.10"
+    micromatch "^3.1.10"
+
 "@appknobs/cognito@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@appknobs/cognito/-/cognito-0.4.0.tgz#775fc51af8e9d224caa55b5c283f235b385194be"
@@ -216,17 +228,6 @@
     debug "^4.1.0"
     flat-cache "^2.0.1"
     isomorphic-fetch "^2.2.1"
-
-"@appknobs/react-parser@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@appknobs/react-parser/-/react-parser-0.4.0.tgz#e420df2d8c21134c6acf794569fdca1d206dcaa9"
-  integrity sha512-d+c3WHi0udSfHy26zpc1oaI3yfsFarS1sdbakyFsj88PEPdFm7e6ihSUKPMBDj7mowGXvirUdS6TTFkC3Idv7Q==
-  dependencies:
-    "@babel/parser" "^7.2.0"
-    "@babel/traverse" "^7.1.6"
-    klaw "^3.0.0"
-    lodash "^4.17.10"
-    micromatch "^3.1.10"
 
 "@appknobs/services-client@^0.4.6":
   version "0.4.6"
@@ -5668,7 +5669,7 @@ html-entities@^1.2.0:
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
   integrity sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
 
-htmlparser2@^3.9.1:
+htmlparser2@^3.10.1, htmlparser2@^3.9.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.10.1.tgz#bd679dc3f59897b6a34bb10749c855bb53a9392f"
   integrity sha512-IgieNijUMbkDovyoKObU1DUhm1iwNYE/fuifEoEHfd1oZKZDaONBSkal7Y01shxsM49R4XaMdGez3WnF9UfiCQ==
@@ -7228,7 +7229,7 @@ left-pad@^1.3.0:
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
-lerna@^3.4.3:
+lerna@^3.13.1:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.13.1.tgz#feaff562176f304bd82329ca29ce46ab6c033463"
   integrity sha512-7kSz8LLozVsoUNTJzJzy+b8TnV9YdviR2Ee2PwGZSlVw3T1Rn7kOAPZjEi+3IWnOPC96zMPHVmjCmzQ4uubalw==

@@ -26,7 +26,14 @@ const run = () => {
 
   cli
     .command('parse <path>')
-    .description('Find & upload feature flags from your project')
+    .option(
+      '-t --type <framework>',
+      'Specify the framework type: "angular" or "react"',
+      /^(angular|react)$/i,
+    )
+    .description(
+      'Find & upload feature flags from your project. Will auto-guess the framework type if not specified.',
+    )
     .action(uploadKnobsAction)
 
   cli
