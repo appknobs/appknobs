@@ -32,7 +32,7 @@ $ knobs --help
 
   Commands:
 
-    parse [options] <path>                 Find & upload feature flags from your project
+    parse [options] <path>       Find & upload feature flags from your project
     app-info                     Retrieve app name and appID
     app-remove [options]         Deletes the current app and all associated records from Appknobs
     apikey                       Retrieve your API key
