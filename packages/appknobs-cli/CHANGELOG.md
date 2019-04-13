@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/appknobs/appknobs/compare/v0.6.0...v0.6.1) (2019-04-13)
+
+
+### Bug Fixes
+
+* **CLI:** bump parser version ([7c0acc6](https://github.com/appknobs/appknobs/commit/7c0acc6))
+
+
+
+
+
 # [0.6.0](https://github.com/appknobs/appknobs/compare/v0.5.0...v0.6.0) (2019-04-06)
 
 
