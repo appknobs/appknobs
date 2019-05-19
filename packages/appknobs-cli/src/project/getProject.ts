@@ -1,4 +1,5 @@
 import {forStage, project} from '@appknobs/services-client'
+import {serviceErrorToError} from '../serviceErrorToError'
 import {getCurrProjectName} from './getCurrProjectName'
 
 interface Project {
@@ -18,7 +19,7 @@ export const getProject = async (
   const {data: userProjects, errors: listErrors} = await projectList(authToken)
 
   if (listErrors) {
-    throw new Error(listErrors[0].toString())
+    throw serviceErrorToError(listErrors)
   }
 
   const projectWithSameName = userProjects.find(
@@ -35,7 +36,7 @@ export const getProject = async (
   })
 
   if (createErrors) {
-    throw new Error(createErrors[0].toString())
+    throw serviceErrorToError(createErrors)
   }
 
   return newProjectRecord

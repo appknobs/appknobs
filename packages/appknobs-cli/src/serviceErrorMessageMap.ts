@@ -6,6 +6,7 @@ const messageMap = {
   NotAuthorizedException: 'Wrong username or password',
   InvalidParameterException: 'Wrong email or password format',
   UnknownError: unknownError,
+  OverPlanLimit: `You have reached your plan's limits. Please upgrade at https://console.appknobs.io/premium`,
 }
 
 const toString = (error) =>

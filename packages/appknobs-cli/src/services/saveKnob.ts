@@ -1,4 +1,6 @@
 import {forStage, knob} from '@appknobs/services-client'
+import {serviceErrorMessageMap} from '../serviceErrorMessageMap'
+import {serviceErrorToError} from '../serviceErrorToError'
 import {AsyncResult} from '../types'
 
 export const saveKnob = (stage: string, token: string, projectId: string) => (
@@ -16,7 +18,9 @@ export const saveKnob = (stage: string, token: string, projectId: string) => (
       ? {
           type: 'error',
           flag,
-          message: saveResult.errors[0].toString(),
+          message: serviceErrorMessageMap(
+            serviceErrorToError(saveResult.errors[0]),
+          ),
         }
       : {
           type: 'success',

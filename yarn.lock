@@ -207,10 +207,10 @@
   dependencies:
     tslib "^1.9.0"
 
-"@appknobs/code-parser@^0.4.8":
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/@appknobs/code-parser/-/code-parser-0.4.8.tgz#3209e5d666a15a8267dba3875c41f398dbf7f7fe"
-  integrity sha512-8hzbBo2AP2BQ0xdkWAKLh5P1fYyxd52907tSKfmL0GoU8biYjPOsPTIH+Z+mvh7VVzd3TVkgVhzHl2KHDn0FPg==
+"@appknobs/code-parser@^0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@appknobs/code-parser/-/code-parser-0.4.9.tgz#93dabbc7badb14603932c71c83835f1a1bf6fd83"
+  integrity sha512-tVyVwMDic2z/8IveixbfHFEMq7nRupUhviNb473wj1RSYqFUQzG/9g1kpNnjHEIRbBOzuyqzmPHhsNqDCeCGKQ==
   dependencies:
     "@babel/parser" "^7.2.0"
     "@babel/traverse" "^7.1.6"
