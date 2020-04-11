@@ -66,9 +66,10 @@ export class AppknobsWrapperLogic extends React.Component<Props, State> {
     this.trySubscribe()
 
     const clientChanged = prevProps.client !== this.props.client
+    const payloadChanged = prevProps.payload !== this.props.payload
     const featuresChanged = prevProps.features !== this.props.features
 
-    if (clientChanged) {
+    if (clientChanged || payloadChanged) {
       this.tryEvaluate()
     }
 
