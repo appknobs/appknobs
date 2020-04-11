@@ -1,7 +1,7 @@
 {
   "name": "@appknobs/react",
   "description": "Declarative feature flags in React using Appknobs.io",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "license": "Apache-2.0",
   "homepage": "http://appknobs.io",
   "repository": "https://github.com/appknobs/appknobs",
